@@ -1,0 +1,329 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap_and_overrides
+ *= require_tree
+ *= require_self
+ */
+ html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: outside none none;
+}
+
+/*----#CONTENENT----*/
+.row {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+.col-md-12, .col-md-6, .col-md-5, .col-md-4, .col-md-2, .col-md-1 {
+	padding: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+.contenent {
+	margin: 0;
+	padding: 0;
+
+	background-image: url(background.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.filter {
+	background-color: rgba(0, 0, 0, 0.67);
+}
+.contenent-main {
+	width: 81%;
+	padding: 0;
+}
+
+/*----#HOMPAGE----*/
+.menus {
+	margin-top: 70px;
+	margin-left: 25%;
+}
+.navbar-nav li a {
+	margin-left: 6px;
+
+	background-color: rgba(0, 0, 0, 0);
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #a4a4a4;
+	font-size: 13px;
+	letter-spacing: 1.8px;
+}
+.navbar-nav li a:hover {
+	background-color: rgba(0, 0, 0, 0);
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+}
+.navbar-toggle {
+	background-color: #222;
+}
+.navbar-toggle:hover {
+	border: 1px solid #a4a4a4;
+}
+.icon-bar {
+	background-color: #a4a4a4;
+}
+.title, .subtitle {
+	position: relative;
+	vertical-align: top;
+
+	text-align: center;
+}
+.title {
+	top: 163px;
+
+	font-size: 469%;
+	letter-spacing: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #eaeaea;
+}
+.subtitle {
+	top: 150px;
+
+	font-size: 120%;
+	letter-spacing: 1.8px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #a4a4a4;
+}
+
+/*------#VIDEOS--------*/
+.titlevid {
+	margin-top: 120px;
+	margin-bottom: 12px;
+
+	font-size: 21px;
+	text-align: left;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.titleallvid {
+	margin-top: 120px;
+	margin-right: 15px;
+
+
+	text-align: right;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.titleallvid a:visited, .titleallvid a:link{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #5c5c5c;
+}
+.like {
+	width: 32.6%;
+	padding-right: 25px;
+}
+.big {
+	width: 34.7%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.waiting {
+	width: 32.4%;
+	padding-left: 25px;
+}
+.like, .big {
+	border-right: 2px solid #5c5c5c;
+}
+.like, .big, .waiting {
+	padding-top: 25px;
+
+	border-top: 2px solid #5c5c5c;
+	border-bottom: 2px solid #5c5c5c;
+}
+.subtitlevid {
+	margin-bottom: 15px;
+
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.underscore {
+	position: relative;
+	top: -8px;
+
+	font-size: 35px;
+}
+
+/*----#UPCOMMING GIGS----*/
+.titregig {
+	margin-top: 90px;
+	margin-bottom: 23px;
+
+	font-size: 23px;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.contenugig {
+	padding-top: 18px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+
+	border-top: 2px solid #5c5c5c;
+}
+.col-md-1 {
+	width: 14.5%;
+}
+.month {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #c4c4c4;
+}
+.numberoct {
+	margin-left: 24px;
+
+	font-size: 21px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.number {
+	margin-left: 27px;
+
+	font-size: 21px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.city {
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #c4c4c4;
+}
+.scene {
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #c4c4c4;
+}
+.view {
+	margin-top: 7px;
+	margin-bottom: 80px;
+
+	text-align: center;
+}
+.view a:link, .view a:visited {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #c4c4c4;
+}
+
+/*----ABOUT OBSIDIAN----*/
+.contenentob {
+	padding-bottom: 67px;
+
+	border-top: 2px solid #5c5c5c;
+}
+.titleob {
+	margin-top: 70px;
+	margin-bottom: 40px;
+
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.titlevol {
+	margin-top: 70px;
+	margin-bottom: 42px;
+
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.messageob {
+	margin-right: 47px;
+
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #a4a4a4;
+}
+.alignrp {
+	padding-left: 12px;
+}
+.subtitlerp {
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #c4c4c4;
+}
+.subdate {
+	margin-bottom: 35px;
+
+	font-size: 12px;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #a4a4a4;
+}
+
+/*----#FOOTER----*/
+.contenentrs {
+	padding-top: 33px;
+	padding-bottom: 85px;
+
+	border-top: 2px solid #5c5c5c;
+}
+.icon-rs {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	left: 335px;
+	margin-right: 26px;
+
+  font-size: 21px;
+	text-align: center;
+}
+.icon-rs a:visited, .icon-rs a:link {
+	color: #fff;
+}
+.titlefooter {
+	margin-top: 42px;
+
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #c4c4c4;
+}
