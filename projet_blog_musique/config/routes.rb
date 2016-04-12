@@ -1,14 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :articles, only: [:index, :show, :update, :destroy]
+
   root 'homepage#index'
-
-  get 'articles' => 'articles#index'
-
-  get 'articles/:id' => 'articles#show'
-
-  get 'articles/:id' => 'articles#update'
-
-  get 'articles/:id' => 'articles#delete'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

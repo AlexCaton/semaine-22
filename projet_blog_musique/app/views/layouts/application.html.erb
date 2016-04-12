@@ -10,6 +10,15 @@
 <body data-spy="scroll" data-target=".navbar">
   <div class="container-fluid contenent">
   	<div class="filter">
+    	<div id="user_nav" class="nav-user">
+        <%if user_signed_in? %>
+          Connect as <%= current_user.email %>. not you ?
+          <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+    			<a class="lay-article" href="/articles">List of articles</a>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Log in", new_user_session_path %>
+        <% end %>
+      </div>
       <%= yield %>
     </div>
   </div>

@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-
+  before_action :authenticate_user!
   def index
     @articles = Article.page(params[:page]).per(5)
   end
@@ -10,7 +10,11 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
-    
+    if @article.update title: params[:title], content: params[:content]
+      redirect_to "/articles/#{params[:id]}"
+    else
+      render "show"
+    end
   end
 
   def destroy
